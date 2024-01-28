@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "3種のカレンダー",
+  "description": "月/15週/年の3種のカレンダーを表示します。",
+  "action": {"default_popup": "popup.html"},
+  "permissions": ["storage"],
+  "icons": {
+    "32": "icon32.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>カレンダー</title>
+    <style>
+     button {
+         border: solid 1px #d3d3d3;
+         background-color: #ffffff;
+         font-size: x-small;
+     }
+     button:hover {
+         background-color: #e7e7e7;
+     }
+     .selector {
+         text-align: right;
+         padding: 0px 0px 2px 0px;
+     }
+
+     table.jhcalyear {
+         border: solid 1px #d3d3d3;
+     }
+     td.jhcalyhbox {
+         cursor: default;
+         text-align: center;
+         font-size: large;
+     }
+     span.jhcalyallow:hover {
+         color: #8b0000;
+     }
+     span.jhcalyheader:hover {
+         color: #8b0000;
+     }
+     td.jhcalymonth {
+         padding: 2px;
+     }
+
+     table.jhcalmonth {
+         border: solid 1px #d3d3d3;
+         border-right: 0px;
+         border-bottom: 0px;
+         border-collaspe: collaspe;
+         border-spacing: 0;
+     }
+     table.jhcalmonth td {
+         border: solid 1px #d3d3d3;
+         border-left: 0px;
+         border-top: 0px;
+     }
+     td.jhcalmheader {
+         cursor: default;
+         text-align: center;
+     }
+     td.jhcalmheader:hover {
+         color: #8b0000;
+     }
+     td.jhcalmarrow {
+         cursor: default;
+         text-align: center;
+     }
+     td.jhcalmarrow:hover {
+         background-color: #d3d3d3;
+     }
+
+     td.jhcalwodbox {
+         cursor: default;
+         background-color: #e7e7e7;
+         text-align: center;
+     }
+     div.jhcalweekofday {
+         font-size: x-small;
+     }
+     div.jhcalwsunday {
+         color: #7f0000;
+     }
+     div.jhcalwmonday {
+         /**/
+     }
+     div.jhcalwtuesday {
+         /**/
+     }
+     div.jhcalwwednesday {
+         /**/
+     }
+     div.jhcalwthursday {
+         /**/
+     }
+     div.jhcalwfriday {
+         /**/
+     }
+     div.jhcalwsaturday {
+         color: #00007f;
+     }
+
+     td.jhcaldaybox {
+         position: relative;
+         padding: 0px;
+     }
+     div.jhcalday {
+         cursor: default;
+         border: solid 1px rgba(0, 0, 0, 0);
+         text-align: right;
+         padding: 0px;
+     }
+     div.jhcaltoday {
+         border: solid 1px #003f7f;
+     }
+     div.jhcalholiday {
+         color: #bf0000;
+         font-weight: bold;
+     }
+     div.jhcalinfo {
+         color: #7f0000;
+     }
+     div.jhcalsunday {
+         color: #7f0000;
+     }
+     div.jhcalmonday {
+         /**/
+     }
+     div.jhcaltuesday {
+         /**/
+     }
+     div.jhcalwednesday {
+         /**/
+     }
+     div.jhcalthursday {
+         /**/
+     }
+     div.jhcalfriday {
+         /**/
+     }
+     div.jhcalsaturday {
+         color: #00007f;
+     }
+     div.jhcalother {
+         color: #bfbfbf;
+     }
+
+     td.jhcalwhbox {
+         cursor: default;
+         text-align: center;
+     }
+     td.jhcalwhbox:hover {
+         color: #8b0000;
+     }
+     div.jhcalmeven {
+         background-color: #f7f7f7;
+     }
+     div.jhcalmodd {
+         /**/
+     }
+    </style>
+  </head>
+  <body>
+    <div class="selector">
+      <button id="tagMonthlyButton">月間</button>
+      <button id="tagWeeklyButton">15週</button>
+      <button id="tagYearlyButton">年間</button>
+    </div>
+    <div id="tagMonthly"></div>
+    <div id="tagWeekly"></div>
+    <div id="tagYearly"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
