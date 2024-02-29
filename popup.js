@@ -424,7 +424,7 @@ class JHMonthlyCalendar {
 					const cn_holiday = (holiday ? c_holiday_div : null);
 					const cn_week = c_week[day.getDay()].div;
 					const cn_day = cn_other ?? cn_holiday ?? cn_week;
-					const cn_today = ((day.getDate() == chktoday) ? c_today_div : '');
+					const cn_today = ((day.getDate() == chktoday) && !cn_other ? c_today_div : '');
 					div.className = `${c_day_div} ${cn_day} ${cn_today}`.trim();
 					div.innerText = day.getDate();
 					td.appendChild(div);
